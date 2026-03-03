@@ -185,6 +185,27 @@ export function GeneratorLayout() {
             </motion.div>
           </main>
         )}
+
+        {/* Footer - Version & Author */}
+        <footer className="mt-auto pt-4 shrink-0">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="flex items-center gap-2 text-white/30 text-xs"
+          >
+            <span className="font-mono">v1.0.0</span>
+            <span>•</span>
+            <a
+              href="https://github.com/Dream-Pixels-Forge"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-400 transition-colors underline-offset-2 hover:underline"
+            >
+              Dream-Pixels-Forge
+            </a>
+          </motion.div>
+        </footer>
       </div>
 
       <SettingsModal
