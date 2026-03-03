@@ -175,6 +175,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 <div align="center">
 
-Made with ❤️ by L'Hymne Team
+Made with ❤️ by Dream-Pixels-Forge
 
 </div>
