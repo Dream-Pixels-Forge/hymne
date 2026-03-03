@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "L'Hymne",
+  "version": "1.0.0",
+  "identifier": "com.hymne.desktop",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "L'Hymne - Créateur de Souvenirs",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "center": true,
+        "resizable": true,
+        "maximizable": true,
+        "minimizable": true,
+        "closable": true,
+        "decorations": true,
+        "transparent": false,
+        "fullscreen": false,
+        "focus": true,
+        "visible": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: https://asset-local.tauri.app; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://generativelanguage.googleapis.com"
+    }
+  },
+  "bundle": {
+    "active": false,
+    "targets": [],
+    "icon": [],
+    "resources": [],
+    "windows": {
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    },
+    "category": "Entertainment",
+    "copyright": "© 2026 L'Hymne Team",
+    "externalBin": [],
+    "longDescription": "L'Hymne est un générateur de paroles immersif pour événements spéciaux, propulsé par l'IA. Créez des chansons personnalisées pour les mariages, anniversaires, naissances et plus encore.",
+    "shortDescription": "Générateur de paroles immersif propulsé par l'IA"
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    }
+  }
+}

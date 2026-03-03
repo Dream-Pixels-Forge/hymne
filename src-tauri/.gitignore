@@ -1,0 +1,27 @@
+# Tauri build outputs
+target/
+**/target/
+
+# Build artifacts
+*.exe
+*.msi
+*.app
+*.dmg
+*.deb
+*.rpm
+*.AppImage
+
+# Development
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

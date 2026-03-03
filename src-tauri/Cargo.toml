@@ -1,0 +1,18 @@
+[package]
+name = "hymne"
+version = "1.0.0"
+description = "L'Hymne - Créateur de Souvenirs. AI-powered lyrics generator for special events."
+authors = ["L'Hymne Team"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "image-ico"] }
+tauri-plugin-shell = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-store = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
